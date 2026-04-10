@@ -565,8 +565,8 @@ section {
 }
 
 .credential-sidebar h4 {
-  color: var(--color-accent-light);
-  font-size: var(--fs-md);
+  color: var(--color-white);
+  font-size: var(--fs-lg);
   margin-bottom: var(--sp-3);
   font-style: italic;
 }
