@@ -200,32 +200,32 @@ section {
 }
 
 .section--alt {
-  background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg-warm) 100%);
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
   transition: all var(--transition-slow);
 }
 
 .section--dark {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  color: var(--color-white);
+  background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-bg-warm) 100%);
+  color: var(--color-text);
 }
 
 .section--green {
-  background: linear-gradient(135deg, var(--color-bg-alt) 0%, var(--color-accent-sage) 20%, var(--color-bg-alt) 100%);
-  opacity: 0.98;
+  background: linear-gradient(135deg, var(--color-bg) 0%, var(--color-bg-alt) 100%);
+  opacity: 1;
 }
 
 .section--dark h2,
 .section--dark h3,
 .section--dark h4 {
-  color: var(--color-white);
+  color: var(--color-text);
 }
 
 .section--dark .text-muted {
-  color: rgba(255,255,255,0.7);
+  color: var(--color-text-muted);
 }
 
 .section--dark a {
-  color: var(--color-accent-light);
+  color: var(--color-primary);
 }
 
 .section--dark a:hover {
@@ -1193,8 +1193,8 @@ section {
    FOOTER
    ============================================ */
 .site-footer {
-  background-color: var(--color-primary-dark);
-  color: rgba(255,255,255,0.75);
+  background: linear-gradient(135deg, var(--color-bg-warm) 0%, var(--color-bg-alt) 100%);
+  color: var(--color-text);
   padding: var(--sp-8) 0 var(--sp-4);
 }
 
@@ -1206,24 +1206,24 @@ section {
 }
 
 .footer-brand .site-logo a {
-  color: var(--color-white);
+  color: var(--color-primary);
   font-size: var(--fs-lg);
 }
 
 .footer-brand .tagline {
-  color: rgba(255,255,255,0.5);
+  color: var(--color-text-muted);
 }
 
 .footer-brand p {
   margin-top: var(--sp-2);
   font-size: var(--fs-sm);
-  color: rgba(255,255,255,0.6);
+  color: var(--color-text-muted);
   max-width: 300px;
 }
 
 .footer-nav h4,
 .footer-contact h4 {
-  color: var(--color-white);
+  color: var(--color-text);
   font-size: var(--fs-sm);
   font-family: var(--font-body);
   font-weight: 600;
@@ -1234,14 +1234,14 @@ section {
 
 .footer-nav a {
   display: block;
-  color: rgba(255,255,255,0.65);
+  color: var(--color-text-muted);
   font-size: var(--fs-sm);
   padding: 0.25rem 0;
   transition: color var(--transition-fast);
 }
 
 .footer-nav a:hover {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .footer-contact-item {
@@ -1250,19 +1250,19 @@ section {
 }
 
 .footer-contact-item a {
-  color: rgba(255,255,255,0.65);
+  color: var(--color-text-muted);
 }
 
 .footer-contact-item a:hover {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(44, 110, 113, 0.15);
   padding-top: var(--sp-3);
   text-align: center;
   font-size: var(--fs-xs);
-  color: rgba(255,255,255,0.4);
+  color: var(--color-text-muted);
 }
 
 
@@ -1523,7 +1523,7 @@ section {
 /* Enhanced footer depth */
 .site-footer {
   position: relative;
-  background: linear-gradient(135deg, var(--color-primary-dark) 0%, #1a3a3c 100%);
+  background: linear-gradient(135deg, var(--color-bg-warm) 0%, var(--color-bg-alt) 100%);
 }
 
 .site-footer::before {
