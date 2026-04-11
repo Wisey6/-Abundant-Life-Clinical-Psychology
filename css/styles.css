@@ -1362,14 +1362,14 @@ section {
    VISUAL DEPTH & PREMIUM TEXTURES
    ============================================ */
 
-/* Subtle diagonal stripe pattern background */
-@supports (background-image: linear-gradient(45deg, transparent 24%, rgba(255,255,255,.05) 25%, rgba(255,255,255,.05) 26%, transparent 27%, transparent 74%, rgba(255,255,255,.05) 75%, rgba(255,255,255,.05) 76%, transparent 77%, transparent)) {
+/* Subtle textured background pattern */
+@supports (background-image: radial-gradient(circle, rgba(44, 110, 113, 0.03) 1px, transparent 1px)) {
   body {
     background-image:
-      linear-gradient(45deg, transparent 24%, rgba(44, 110, 113, 0.02) 25%, rgba(44, 110, 113, 0.02) 26%, transparent 27%, transparent 74%, rgba(44, 110, 113, 0.02) 75%, rgba(44, 110, 113, 0.02) 76%, transparent 77%, transparent),
-      linear-gradient(45deg, transparent 24%, rgba(44, 110, 113, 0.02) 25%, rgba(44, 110, 113, 0.02) 26%, transparent 27%, transparent 74%, rgba(44, 110, 113, 0.02) 75%, rgba(44, 110, 113, 0.02) 76%, transparent 77%, transparent);
-    background-size: 60px 60px;
-    background-position: 0 0, 30px 30px;
+      radial-gradient(circle, rgba(44, 110, 113, 0.02) 1px, transparent 1px),
+      radial-gradient(circle, rgba(201, 123, 92, 0.01) 1px, transparent 1px);
+    background-size: 50px 50px, 80px 80px;
+    background-position: 0 0, 25px 25px;
   }
 }
 
